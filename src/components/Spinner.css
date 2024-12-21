@@ -1,0 +1,32 @@
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center spinner vertically */
+}
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.1);
+  border-left-color: #3b82f6; /* Change this to your primary color */
+  border-radius: 50%;
+  width: 60px; /* Adjust size */
+  height: 60px; /* Adjust size */
+  animation: spin 1s linear infinite;
+}
+
+.loading-text {
+  margin-top: 12px; /* Space between spinner and text */
+  color: #3b82f6; /* Change to your primary color */
+  font-size: 1.2rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
